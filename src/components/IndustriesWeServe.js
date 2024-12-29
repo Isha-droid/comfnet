@@ -10,7 +10,7 @@ export default function IndustriesWeServe ()
 
         return (
                 <section className="py-12 bg-blue-900 text-white">
-                        <div className="max-w-7xl mx-auto px-4">
+                        <div className="max-w-[calc(100%-280px)] mx-auto px-4">
                                 <h2 className="text-2xl font-bold">Industries we serve</h2>
                                 <div className="mt-6">
                                         { industries.map( ( industry, index ) => (

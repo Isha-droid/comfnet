@@ -1,5 +1,16 @@
+'use client'
+import { useState, useEffect } from "react";
+
 const Footer=() =>
 {
+        const [ currentYear, setCurrentYear ]=useState( new Date().getFullYear() );
+
+        useEffect( () =>
+        {
+                const year=new Date().getFullYear();
+                setCurrentYear( year );
+        }, [] );
+
         return (
                 <footer className="bg-blue-900 text-white py-10">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,7 +19,6 @@ const Footer=() =>
                                         {/* Branding */ }
                                         <div className="flex items-center space-x-4">
                                                 <img src="images/logo.png" alt="ComfNet Logo" className="h-10" /> {/* Replace /logo.png with the actual logo path */ }
-
                                         </div>
                                         {/* Social Media Icons */ }
                                         <div className="flex space-x-4">
@@ -78,7 +88,7 @@ const Footer=() =>
                                 </div>
                                 {/* Bottom Section */ }
                                 <div className="mt-10 border-t border-white/20 pt-6 text-center text-sm">
-                                        <p>Copyright © 2023 ComfNet Solutions GmbH. All Rights Reserved.</p>
+                                        <p>Copyright © { currentYear } ComfNet Solutions GmbH. All Rights Reserved.</p>
                                         <div className="mt-2 space-x-4">
                                                 <a href="#" className="hover:underline">Terms of Use</a>
                                                 <a href="#" className="hover:underline">Privacy Policy</a>
