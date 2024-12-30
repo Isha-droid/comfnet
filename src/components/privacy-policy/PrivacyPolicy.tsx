@@ -4,9 +4,9 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <div className="text-black">
       <header className="text-center py-8 bg-gray-100">
-        <h1 className="text-4xl text-blue-700">Privacy Policy</h1>
+        <h1 className="text-4xl text-blue-700 font-bold">Privacy Policy</h1>
         <p className="text-lg text-gray-600">
           Details on how user data is collected, used, and safeguarded, adhering to GDPR and other privacy regulations
         </p>
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
           <p className="mb-4">
             Welcome to ComfNet Solutions! If you continue to browse this website you are fully agreeing to the practices set out in the following terms and conditions.
           </p>
-          <ul className="mt-4 pl-6">
+          <ul className="mt-4 pl-6 list-disc">
             <li className="mb-2">The terms “we or us” refer to the owner of ComfNet Solutions.</li>
             <li className="mb-2">The term “you” refers to the user/browser of the website www.comfnet.de.</li>
             <li className="mb-2">This policy sets out the basis on which we collect personal data from you and how we may use it.</li>
