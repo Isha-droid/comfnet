@@ -9,7 +9,7 @@ export default function Hero ()
 
         return (
                 <div className='bg-white'>
-                        <motion.div className="flex flex-col items-center justify-center relative bg-white text-white min-h-[82vh]">
+                        <motion.div className="flex flex-col items-center justify-center relative bg-white text-white min-h-screen">
                                 {/* Background Video */ }
                                 <video
                                         className="absolute inset-0 w-full h-full object-cover z-0"
@@ -63,10 +63,11 @@ export default function Hero ()
                                                         transition={ { delay: 0.8, duration: 0.5 } }
                                                 >
                                                         <Button
-                                                                bgColor="bg-orange-500"
+                                                                bgColor="bg-[#FFA200]"
                                                                 textColor="text-white"
                                                                 route="/about"
                                                                 text="Get your consultation - Free"
+                                                                border="no"
                                                         />
                                                         <motion.p
                                                                 initial={ { opacity: 0, y: 20 } }

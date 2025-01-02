@@ -1,47 +1,22 @@
-export default function WhyChooseUs ()
+
+export default function WhyChooseUs ( { reasons } )
 {
-        const reasons=[
-                {
-                        title: 'Global Reach',
-                        description:
-                                'We will connect you with the highly talented and the most advanced technology from around the globe.',
-                        image: 'Why choose us (global reach img).svg',
-                },
-                {
-                        title: 'Customized Solutions',
-                        description:
-                                'Whether it is staffing or technology-related, we tailor our services to your specific business requirements.',
-                        image: 'Why choose us (automated solutions img).svg',
-                },
-                {
-                        title: 'Proven Track Record',
-                        description:
-                                'Over the years, we have successfully placed a lot of highly skilled people & facilitated technology transfer to numerous Indian and German Companies.',
-                        image: 'Why choose us (proven track record img).svg',
-                },
-                {
-                        title: 'Client Success Metrics',
-                        description:
-                                'Clients got up to 30% productivity boosts, launched new connected products, and also improved the safety and operational efficiency.',
-                        image: 'Why choose us (client success metrics img).svg',
-                },
-        ];
 
         return (
                 <section className="py-12 bg-gray-100">
-                        <div className="max-w-[calc(100%-280px)] mx-auto px-4">
-                                <h2 className="text-2xl font-bold text-blue-600">Why choose US?</h2>
-                                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="max-w-[calc(100%-280px)] mx-auto px-6">
+                                <h2 className="text-3xl font-bold text-blue-700 text-center mb-8">Why Choose Us?</h2>
+                                <div className="grid grid-cols-10 gap-6">
                                         { reasons.map( ( reason, index ) => (
-                                                <div key={ index } className="flex items-start space-x-4">
-                                                        <img
-                                                                src={ `images/${ reason.image }` }
-                                                                alt={ reason.title }
-                                                                className="w-16 h-16 rounded"
-                                                        />
-                                                        <div>
-                                                                <h3 className="font-bold">{ reason.title }</h3>
-                                                                <p className="text-gray-600 mt-2">{ reason.description }</p>
+                                                <div key={ index } className="col-span-10 md:col-span-5 lg:col-span-5">
+                                                        <div className="flex flex-col items-start text-center p-6">
+                                                                <img
+                                                                        src={ `images/${ reason.image }` }
+                                                                        alt={ reason.title }
+                                                                        className="w-full h-[215px] object-cover rounded mb-4"
+                                                                />
+                                                                <h3 className="text-lg text-black font-semibold mb-2">{ reason.title }</h3>
+                                                                <p className="text-sm text-left text-gray-600">{ reason.description }</p>
                                                         </div>
                                                 </div>
                                         ) ) }

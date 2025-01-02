@@ -1,21 +1,11 @@
 'use client';
-import { motion, useInView } from 'framer-motion';
-import React, { useRef } from 'react';
+import React from 'react';
 
 export default function MissionVision ()
 {
-        const ref=useRef( null ); // Create a ref for the element
-        const inView=useInView( ref, { threshold: 0.2 } ); // Detect when the element is in view
-
         return (
-                <motion.div
-                        ref={ ref } // Attach the ref to the motion.div
-                        initial={ { opacity: 0, y: 50 } }
-                        animate={ inView? { opacity: 1, y: 0 }:{} }
-                        transition={ { duration: 0.6 } }
-                        className="mx-auto px-32 py-16 bg-slate-100 max-w-[1440px]"
-                >
-                        <h2 className="text-5xl font-bold text-center text-blue-600 mb-10">
+                <div className="mx-auto px-32 py-16 bg-slate-100 max-w-[1440px]">
+                        <h2 className="text-5xl font-bold text-center text-blue-700 mb-10">
                                 Unveiling Our<br /> Mission & Vision
                         </h2>
                         <h4 className="text-gray-800 text-lg w-[70%] text-center mx-auto my-8 leading-relaxed">
@@ -49,20 +39,17 @@ export default function MissionVision ()
                                 </div>
                         </div>
 
-
-
-
                         <div className="grid grid-cols-12 gap-6 mt-10">
                                 {/* First element spans 6 columns */ }
                                 <img
                                         src="images/Mission&vision 1.svg"
                                         alt="Team"
-                                        className="w-full h-full rounded-md shadow-lg col-span-6  object-cover"
+                                        className="w-full h-full rounded-md shadow-lg col-span-6 object-cover"
                                 />
 
                                 {/* Second element spans 3 columns */ }
                                 <div
-                                        className="w-full h-full flex flex-col justify-center items-center bg-blue-600 text-white p-6 rounded-md shadow-md col-span-3"
+                                        className="w-full h-full flex flex-col justify-center items-center bg-blue-700 text-white p-6 rounded-md shadow-md col-span-3"
                                 >
                                         <h3 className="text-3xl font-bold">5+</h3>
                                         <p>Glorious Years</p>
@@ -80,14 +67,14 @@ export default function MissionVision ()
                                 <img
                                         src="images/Mission&vision 2.svg"
                                         alt="Meeting"
-                                        className="w-full h-full rounded-md shadow-lg col-span-3  object-cover"
+                                        className="w-full h-full rounded-md shadow-lg col-span-3 object-cover"
                                 />
 
                                 {/* Fifth element spans 3 columns */ }
                                 <img
                                         src="images/Mission&vision 3.svg"
                                         alt="Discussion"
-                                        className="w-full h-full rounded-md shadow-lg col-span-6  object-cover"
+                                        className="w-full h-full rounded-md shadow-lg col-span-6 object-cover"
                                 />
 
                                 {/* Sixth element spans 6 columns */ }
@@ -97,9 +84,6 @@ export default function MissionVision ()
                                         className="w-full h-full rounded-md shadow-lg col-span-3 object-cover"
                                 />
                         </div>
-
-
-
-                </motion.div>
+                </div>
         );
 }

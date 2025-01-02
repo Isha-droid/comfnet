@@ -1,4 +1,5 @@
 'use client';
+import Contact from "../../components/legal_disclosure/Contact";
 import { useState } from "react";
 
 const PrivacyPolicy=() =>
@@ -87,14 +88,14 @@ const PrivacyPolicy=() =>
                                                                 <li key={ tab }>
                                                                         <button
                                                                                 className={ `w-full text-left p-2 relative group ${ activeTab===tab
-                                                                                        ? "text-blue-400"
+                                                                                        ? "text-blue-700"
                                                                                         :"text-gray-400 hover:text-gray-800"
                                                                                         }` }
                                                                                 onClick={ () => setActiveTab( tab ) }
                                                                         >
                                                                                 <span
                                                                                         className={ `absolute left-0 top-0 h-full w-1 ${ activeTab===tab
-                                                                                                ? "bg-blue-400"
+                                                                                                ? "bg-blue-700"
                                                                                                 :"bg-transparent group-hover:bg-gray-800"
                                                                                                 }` }
                                                                                 ></span>
@@ -115,39 +116,7 @@ const PrivacyPolicy=() =>
                                 </div>
                         </div>
 
-                        {/* Contact Form */ }
-                        <div className="bg-slate-100 py-12">
-                                <div className="container mx-auto px-4">
-                                        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-                                        <form className="grid grid-cols-2 gap-4">
-                                                <input
-                                                        type="text"
-                                                        placeholder="Name*"
-                                                        className="p-3 rounded bg-blue-700 text-white"
-                                                />
-                                                <input
-                                                        type="email"
-                                                        placeholder="Email address*"
-                                                        className="p-3 rounded bg-blue-700 text-white"
-                                                />
-                                                <input
-                                                        type="number"
-                                                        placeholder="Total experience (years)*"
-                                                        className="p-3 rounded bg-blue-700 text-white"
-                                                />
-                                                <input
-                                                        type="text"
-                                                        placeholder="Notice period/availability*"
-                                                        className="p-3 rounded bg-blue-700 text-white"
-                                                />
-                                                <div className="col-span-2 text-left">
-                                                        <button className="bg-yellow-500 text-black font-bold py-2 px-6 rounded hover:bg-yellow-600">
-                                                                Submit Application
-                                                        </button>
-                                                </div>
-                                        </form>
-                                </div>
-                        </div>
+                        <Contact />
                 </div>
         );
 };

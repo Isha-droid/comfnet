@@ -1,31 +1,29 @@
 {
-  "name": "comfnet",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-<<<<<<< HEAD
-    "framer-motion": "^11.15.0",
-=======
-    "lucide-react": "^0.469.0",
->>>>>>> 7dfb1ee06a38fabcaa95116f4656a9d75e8667b1
-    "next": "15.0.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-phone-input-2": "^2.15.1",
-    "swiper": "^11.1.15"
-  },
-  "devDependencies": {
-    "@types/node": "22.10.2",
-    "@types/react": "19.0.2",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
-  }
+        "name": "comfnet",
+        "version": "0.1.0",
+        "private": true,
+        "scripts": {
+                "dev": "next dev --turbopack",
+                "build": "next build",
+                "start": "next start",
+                "lint": "next lint"
+        },
+        "dependencies": {
+                "framer-motion": "^11.15.0",
+                "lucide-react": "^0.469.0",
+                "next": "15.0.4",
+                "react": "^19.0.0",
+                "react-dom": "^19.0.0",
+                "react-phone-input-2": "^2.15.1",
+                "react-typing-animation": "^1.6.2",
+                "swiper": "^11.1.15"
+        },
+        "devDependencies": {
+                "@types/node": "22.10.2",
+                "@types/react": "19.0.2",
+                "eslint": "^8",
+                "eslint-config-next": "15.0.4",
+                "postcss": "^8",
+                "tailwindcss": "^3.4.1"
+        }
 }

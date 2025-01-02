@@ -72,8 +72,8 @@ const Footer=() =>
                                         {/* Lets Get Connected */ }
                                         <div>
                                                 <h3 className="font-bold text-lg mb-4">Lets Get Connected</h3>
-                                                <p>Email: <a href="mailto:info@comfnet.de" className="text-blue-300 hover:underline">info@comfnet.de</a></p>
-                                                <p>Phone: <a href="tel:+49407163470" className="text-blue-300 hover:underline">+49 40 7163470</a></p>
+                                                <p>Email: <a href="mailto:info@comfnet.de" className="text-blue-700 hover:underline">info@comfnet.de</a></p>
+                                                <p>Phone: <a href="tel:+49407163470" className="text-blue-700 hover:underline">+49 40 7163470</a></p>
                                                 <form className="mt-4">
                                                         <input
                                                                 type="email"

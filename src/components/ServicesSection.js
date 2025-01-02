@@ -46,7 +46,7 @@ const ServicesSection=( { title, description, tags=[], image, reverse=false, rou
                                 variants={ textVariants }
                         >
                                 <motion.h2
-                                        className="text-[32px] font-bold text-blue-600"
+                                        className="text-[32px] font-bold text-blue-700"
                                         initial={ { opacity: 0, x: reverse? -30:30 } }
                                         animate={ { opacity: 1, x: 0 } }
                                         transition={ { duration: 0.7 } }
