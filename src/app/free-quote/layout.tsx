@@ -1,4 +1,5 @@
 import Contact from "../../components/freequote/Contact";
+import MyMap from "./Map";
 
 export default function LegalDisclosureLayout({
     children,
@@ -9,7 +10,7 @@ export default function LegalDisclosureLayout({
         <section className="w-full mx-auto bg-white">
             {children}  
             <Contact />
-            <img src="/map.png" alt="location" /> 
+            <MyMap/>
         </section>
     );
 }
